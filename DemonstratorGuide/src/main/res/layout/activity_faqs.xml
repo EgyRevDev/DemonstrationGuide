@@ -1,0 +1,21 @@
+<android.support.v4.view.ViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/faq_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaqsActivity">
+
+    <!--To indicate the page title, use
+    android.support.v4.view.PagerTabStrip or
+    android.support.v4.view.PagerTitleStrip or
+    Jake Wharton’s ViewPagerIndicator -->
+    <android.support.v4.view.PagerTabStrip
+    android:id="@+id/faq_page_stripper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    />
+
+    </android.support.v4.view.ViewPager>

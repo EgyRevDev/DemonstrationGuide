@@ -1,0 +1,44 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageButtonAdvice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icon_image_btn_advice"
+        android:clickable="true"
+        android:contentDescription="@string/description_advice"
+        android:onClick="advices_handler"/>
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageButtonRights"
+        android:layout_alignTop="@+id/imageButtonAdvice"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/icon_image_btn_rights"
+        android:clickable="true"
+        android:contentDescription="@string/description_rights"
+        android:onClick="rights_handler"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonFaqs"
+        android:layout_below="@+id/imageButtonAdvice"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:background="@drawable/icon_image_btn_faqs"
+        android:layout_alignRight="@+id/imageButtonRights"
+        android:layout_alignLeft="@+id/imageButtonAdvice"
+        android:contentDescription="@string/description_faqs"
+        android:onClick="faqs_handler"/>
+</RelativeLayout>
